@@ -9,7 +9,8 @@ public class Task003
         int b = 60;
         int c = 30;
         int max ;
-        max = (a>b)?(a>c?a:c):(b>c?b:c) ;
+        //max = (a>b)?(a>c?a:c):(b>c?b:c) ; tech -1
+        max = (a>=b && a>=c)?a :(b>=c)?b:c;// tech-2
         System.out.printf("The maximum value is %d",max);
 
     }
